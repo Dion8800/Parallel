@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PDF made easier">
+    <meta name="keywords" content="PDF, Tools, Convert">
+    <meta name="author" content="Altersoft">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
+
+    <title>Payment - Pdfify</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="left-side">
+                <a href="index.html"><img src="imgs/logo.svg" alt="Pdfify"></a>
+                <nav>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="howitworks.html">How it works</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </nav>
+            </div>
+            <div class="right-side">
+                <a href="login.html"> <button class="btn-header">Sign in</button></a>
+            </div>
+
+            <div class="mobile-design">
+                <img src="imgs/menu_alt.svg" alt="Menu" onclick="showHeaderMenu()">
+            </div>
+
+            <div class="mobile-design-menu-popup">
+                <div class="mobile-header">
+                    <div class="mobile-left-side">
+                        <a href="/index.html"><img src="imgs/logo.svg" alt="Pdfify"></a>
+                    </div>
+
+                    <div class="mobile-right-side">
+                        <img src="imgs/close_small.svg" alt="Menu" onclick="closeHeaderMenu()">
+                    </div>
+                </div>
+
+                <div class="mobile-menu-container">
+                    <nav>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="howitworks.html">How it works</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </nav>
+
+                    <a href="login.html"> <button class="btn-secondary">
+                        Sign in
+                    </button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="payment">
+
+        <div id="payment-left-side">
+            <div id="paymentDetails">
+                <span id="pd1">
+                    <h1 class="p-black-24">Enter your payment details</h1>
+                    <p class="p-white-14">secure payment</p>
+                </span>
+                <div class="detailBox">
+                    <h2 class="p-dark-24">Total Price</h2>
+                    <span>
+                        <p class="txtOnRed">90% off</p>
+                        <p class="p-black-24">€0.50</p>
+                    </span>
+                </div>
+                <div class="detailBox">
+                    <h2 class="p-dark-24">Secure Payment</h2>
+                    <div>
+                        <img src="imgs/payments.png" alt="Credit cards">
+                    </div>
+                </div>
+
+            </div>
+            <div id="paymentCredentials">
+
+
+                <div class="container preload">
+                </div>
+                <div class="form-container">
+                    <div class="field-container">
+                        <label for="name">Name</label>
+                        <input id="name" maxlength="20" type="text" placeholder="Cardholder name">
+                    </div>
+                    <div class="field-container">
+                        <label for="cardnumber">Card Number</label>
+                        <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Card number">
+                        <svg id="ccicon" class="ccicon" width="750" height="471" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                
+                            </svg>
+                    </div>
+                    <div class="field-container">
+                        <label for="expirationdate">Expiration (mm/yy)</label>
+                        <input id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Expiration date">
+                    </div>
+                    <div class="field-container">
+                        <label for="securitycode">Security Code</label>
+                        <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Security code">
+                    </div>
+
+                </div>
+
+
+
+
+
+                <span id="agreeTerms">
+                    <label class="check-label">I have read and I agree to the  <a href="privacy.html" >tearms and conditions</a> 
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                </label>
+
+                </span>
+                <p class="p-dark-14">
+                    By validating the information given above, I confirm my wish to order an unlimited access with trial offer for a monthly subscription to Convert.tel, subscription for an indefinite period at a preferential price of 0.50€ incl VAT for 48 hours, then at
+                    the price of 29.40€ per month thereafter. Beyond the trial offer and without my cancellation during this period, I authorise the website Convert.tel to collect each month on the anniversary date the amount of the subscription on the
+                    credit card used for payment. I will access my account after my registration.
+                </p>
+
+
+
+                <button id="payBtn" class="btn-primary">
+                    <img src="imgs/payment.svg" alt="Credit card">
+                    Pay now
+                </button>
+            </div>
+
+            <div id="testimonial-container">
+                <h3 class="p-dark-18-b">
+                    TESTIMONIALS
+                </h3>
+                <div id="testimonialsPayment">
+                    <div class="testimonial">
+
+                        <div class="profile">
+                            <img src="imgs/pic-22.png" alt="User image">
+                            <div class="name">
+                                <h4 class="p-dark-24">Kenneth Allen</h4>
+                                <div class="stars">
+                                    <img src="imgs/Star.svg" alt="Activated star">
+                                    <img src="imgs/Star.svg" alt="Activated star">
+
+                                    <img src="imgs/Star.svg" alt="Activated star">
+
+                                    <img src="imgs/Star.svg" alt="Activated star">
+                                    <img src="imgs/star-grey.svg" alt="Disabeld star">
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="p-grey-16">Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam.</p>
+                    </div>
+                    <div class="testimonial">
+
+                        <div class="profile">
+                            <img src="imgs/pic-22.png" alt="user image">
+                            <div class="name">
+                                <h4 class="p-dark-24">Kenneth Allen</h4>
+                                <div class="stars">
+                                    <img src="imgs/Star.svg" alt="Activated star">
+                                    <img src="imgs/Star.svg" alt="Activated star">
+
+                                    <img src="imgs/Star.svg" alt="Activated star">
+
+                                    <img src="imgs/Star.svg" alt="Activated star">
+                                    <img src="imgs/star-grey.svg" alt="Disabled star">
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="p-grey-16">Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam.</p>
+                    </div>
+                    <div class="testimonial">
+
+                        <div class="profile">
+                            <img src="imgs/pic-22.png" alt="User image">
+                            <div class="name">
+                                <h4 class="p-dark-24">Kenneth Allen</h4>
+                                <div class="stars">
+                                    <img src="imgs/Star.svg" alt="Activated star">
+                                    <img src="imgs/Star.svg" alt="Activated star">
+
+                                    <img src="imgs/Star.svg" alt="Activated star">
+
+                                    <img src="imgs/star-grey.svg" alt="Disabeld star">
+                                    <img src="imgs/star-grey.svg" alt="Disabeld star">
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="p-grey-16">Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam.</p>
+                    </div>
+                    <div class="testimonial">
+
+                        <div class="profile">
+                            <img src="imgs/pic-22.png" alt="User image">
+                            <div class="name">
+                                <h4 class="p-dark-24">Kenneth Allen</h4>
+                                <div class="stars">
+                                    <img src="imgs/Star.svg" alt="Activated star">
+                                    <img src="imgs/Star.svg" alt="Activated star">
+
+                                    <img src="imgs/Star.svg" alt="Activated star">
+
+                                    <img src="imgs/Star.svg" alt="Activated star">
+                                    <img src="imgs/star-grey.svg" alt="Disabeld star">
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="p-grey-16">Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="payLeft">
+
+            <div class="aboutUrPayment">
+                <h4 class="p-dark-18-b">YOUR ORDER</h4>
+                <p class="p-grey-18">File conversion and 48h trial to the subscription</p>
+            </div>
+            <div class="aboutUrPayment">
+                <h4 class="p-dark-18-b">YOUR SUBSCRIPTION</h4>
+                <p class="p-grey-18">Convert your files in unlimited 300 supported formats and 25 000 possible combinations for 29,40€ ttc per month.</p>
+            </div>
+            <div class="aboutUrPayment">
+                <h4 class="p-dark-18-b">YOUR ADDRESS</h4>
+                <p class="p-grey-18">giorgimatsukatov@gmail.com</p>
+            </div>
+            <div id="greyCard" class="pad-24 greyBg">
+                <p class="p-grey-18">*At the end of the 48H and without cancellation, the offer will be renewed automatically in a subscription without commitment at the price of 29.40 € per month.</p>
+            </div>
+            <div class="p-pad-24-s">
+                <p class="p-grey-14-i">We offer an online file conversion service. A simple, easy to use and accessible online from anywhere in the world via a simple internet connection from a computer, mobile or tablet for 29.40 € incl. VAT per month. Whether for business
+                    or for your private life, Convert.tel allows you to convert any type of file whether it is an audio, video, word or pdf document, Convert.tel offers you up to 300 different file conversions. Our advisers are at your disposal, by e-mail,
+                    chat or telephone to answer all your questions and guide you through the services offered by Convert.tel.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footerFloor">
+        <div id="floor">
+            <p class="p-white-16">Copyright © 2021 pdfify - made with ❤️ for you.</p>
+
+            <span>
+                <a href="#" >Terms & Conditions</a>
+                <a href="#" >Legal notice</a>
+                <a href="#">Cookie policy</a>
+                <a href="#">Personal data</a>
+                <a href="#">Guarantees</a>
+            </span>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="js/general.js"></script>
+    <script src="js/select.js"></script>
+
+
+</body>
+
+</html>

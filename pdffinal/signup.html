@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PDF made easier">
+    <meta name="keywords" content="PDF, Tools, Convert">
+    <meta name="author" content="Altersoft">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/signup.css">
+
+    <title>Sign up - Pdfify</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+
+
+        <a href="index.html"><img src="imgs/logo.svg" alt="Pdfify"></a>
+
+
+
+    </header>
+
+    <div id="form-container">
+
+        <h1 class="p-black-36-b">Create account</h1>
+
+        <form action="">
+        <span class="input-box">
+            <img src="imgs/mail-1.svg" alt="">
+            <input type="mail" class="userName"  placeholder="Your mail">
+        </span>
+            <span class="input-box">  
+                
+                <img src="imgs/password.svg" alt="">
+               
+         
+                <input type="password"  class="password" placeholder="Your password">
+
+       
+                
+               
+               <div id="eye-box">
+                    <img src="imgs/eye-shut.svg" alt="Eyes hut" id="eye-shut"  onclick="showHidePass()">
+
+                <img src="imgs/eye.svg" alt="Eye" id="eye"  onclick="showHidePass()">
+            </div>
+            </span>
+
+        </form>
+        <button class="btn-primary">Sign up</button>
+
+        <div id="signup-floor">
+            <p class="p-grey-18">
+                By creating an account, you agree to our <a href="privacy.html"> Privacy Policy</a> and our <a href="privacy.html"> Terms & Conditions.</a>
+
+            </p>
+
+            <hr>
+
+            <p class="p-grey-18">Already have an account? <a href="login.html"> Log in</a></p>
+        </div>
+
+    </div>
+
+    <script>
+        function showHidePass() {
+            var x = document.getElementsByClassName("password");
+
+            var eyeShut= document.getElementById("eye-shut");
+            var eyeOpen= document.getElementById("eye");
+
+            if (x[0].type === "password") {
+                x[0].type = "text";
+                eyeShut.style.display="none";
+                eyeOpen.style.display="block";
+
+            } else {
+                x[0].type = "password";
+                eyeShut.style.display="block";
+                eyeOpen.style.display="none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

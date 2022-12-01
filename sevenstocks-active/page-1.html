@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>page-1</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div id="page-1">
+
+        <div id="page-1-content">
+
+        <div class="head-container-4">
+
+            <div class="head">
+
+                <div class="header-mobile">
+                    <div class="header-onOff">
+                        <img src="icons/logo-white.svg"  class="">
+                        <img src="icons/menu.svg" id="menu-btn" onclick="openMenu()">
+                        <img src="icons/menu-x.svg" id="menu-x" onclick="openMenu()" class="hidden">
+                    </div>
+                </div>
+
+                <div id="mobile-menu" class="hidden ">
+
+                    <nav class="mobile-nav">
+                        <a href="index.html" class="navigation-link">
+                            <li> 컨설팅 중인 기업</li>
+                        </a>
+                        <a href="page-2.html">
+                            <li> 뉴스룸</li>
+                        </a>
+                        <a href="page-1.html">
+                            <li> 회사소개
+                        </a>
+
+                        <a href="top.html">
+                            <li> 서비스</li>
+                        </a>
+                        <a href="page-5.html">
+                            <li> 블로그</li>
+                        </a>
+                        <a href="contact.html">
+                            <li> 상담문의</li>
+                        </a>
+
+                        <button class="mobile-nav-btn">
+                            <img src="icons/cass.svg" alt="" id="red-call-mob">
+                            <img src="icons/call-white.svg" alt="" id="white-call-mob">
+                            02-529-1001
+                        </button>
+                    </nav>
+                </div>
+
+                <div class="header_menuu">
+                    <a href="index.html"><img src="icons/logo.svg" alt="Sevenstocks"  class=""></a>
+                    <ul id="header_nav1" class="navigation_1page" >
+                        <li><a href="page-5.html" class="white">컨설팅 중인 기업</a></li>
+                        <li><a href="page-4.html">뉴스룸</a></li>
+                        <li><a href="page-1.html" id="red">회사소개</a></li>
+                        <li><a href="page-2.html">서비스</a></li>
+                        <li><a href="top.html">블로그</a></li>
+                        <li><a href="contact.html">상담문의</a></li>
+                    </ul>
+                    <div id="header_button_container">
+                        <button id="header_menu_button-1">
+                            <img src="icons/call.svg" alt="Phone" id="call-white">
+                            <img src="icons/call-white.svg" alt="Phone" id="call-red">
+                            02-529-1001
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="page-1-inner">
+             <div class="aboutTxt">
+                 <p class="red-23">대한민국 최초로 비상장 주식 시장을 활성화 시킨 선구자</p>
+
+                 <div>
+                    <p class="black-55">
+                        세븐스톡 홀딩스 <br>
+송영봉 대표가 있습니다.
+                    </p>
+                    <hr id="redLine">
+                 </div>
+
+                 <p class="grey-18">
+                    문구가 이 곳에 들어갈 예정입니다.문구가 이 곳에 들어갈 예정입니다.문구가 이 곳에 들어갈 예정입니다.문구가 이 곳에 들어갈 예정입니다.문구가 이 곳에 들어갈 예정입니다.문구가 이 곳에 들어갈 예정입니다.문구가 이 곳에 들어갈 예정입니다.문구가 이 곳에 들어갈 예정입니다.
+                 </p>
+
+                 <div id="blueBox">
+
+                    <div >
+
+                    <p class="">“오늘의 좋은 선택이 <br>
+                        당신을 새로운 세계로 이끌 것입니다.”</p>
+                </div>
+                 </div>
+             </div>
+             <div class="ceoImg"></div>
+        </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+        <script>
+            function openMenu() {
+                var menu = document.getElementById("mobile-menu");
+                const x = document.querySelectorAll('div');
+
+
+                if (menu.classList.contains("hidden")) {
+
+                    menu.classList.remove("hidden");
+                    document.getElementById('fullPage').style.maxHeight = "100vh";
+                    document.getElementById('fullPage').style.overflow = "hidden";
+                    document.getElementById("menu-btn").classList.add("hidden");
+                    document.getElementById("menu-x").classList.remove("hidden");
+                } else {
+
+                    menu.classList.add("hidden");
+                    document.getElementById('fullPage').style.maxHeight = "none";
+                    document.getElementById('fullPage').style.overflow = "visible";
+                    document.getElementById("menu-btn").classList.remove("hidden");
+                    document.getElementById("menu-x").classList.add("hidden");
+                }
+            }
+        </script>
+
+</body>
+
+</html>

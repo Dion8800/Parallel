@@ -1,0 +1,16 @@
+
+
+.double-title {
+    text-align: center;
+    display: grid;
+    gap:24px
+}
+
+.marg-80 {
+    margin-top: 80px;
+}
+
+#footerRegular {
+    margin-top: 0px;
+    border-top: 0px solid  var(--black-33);
+}

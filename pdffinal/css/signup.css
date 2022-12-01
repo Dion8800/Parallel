@@ -1,0 +1,141 @@
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding-top: 24px;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 461px;
+    gap: 52px;
+    margin: 120px auto 0 auto;
+    padding-bottom: 64px;
+}
+
+#form-container form {
+    display: grid;
+    gap: 24px;
+}
+
+#form-container form a {
+    color: var(--blue-light);
+    margin-top: -12px;
+    font-style:  var(--main-style);
+    font-weight:  var(--main-weight);
+    font-size:  var(--font-18);
+    line-height: var(--line-26);
+}
+
+#form-container form input {
+    padding: 16px 24px 16px 24px;
+    border-radius: 6px;
+    background-color: var(--white-f7);
+    font-style:  var(--main-style);
+    font-weight:  var(--main-weight);
+    font-size:  var(--font-18);
+    line-height:  var(--line-22);
+    color:  var(--blue-dark-dark);
+}
+
+#form-container form input:focus {
+    /* background-color:  var(--white-f7); */
+    /* outline: 1px solid  var(--green-light-light); */
+}
+
+#form-container form input::placeholder {
+    font-style:  var(--main-style);
+    font-weight:  var(--main-weight);
+    font-size:  var(--font-18);
+    line-height:  var(--line-22);
+    color:  var(--black-66);
+}
+
+#signup-floor {
+    display: grid;
+    gap: 40px;
+    margin-top: -20px;
+}
+
+#signup-floor a {
+    color: var(--blue-light);
+}
+
+#signup-floor hr {
+    border: 1px solid var(--black-1a);
+}
+
+
+.password {
+    width: 100%;
+}
+
+#form-container form span {
+    display: flex;
+    position: relative;
+}
+
+
+#eye-box {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    top: 16px;
+    right: 24px;
+}
+
+
+#eye{
+    display: none;
+}
+
+@media only screen and (max-width:500px) {
+    #form-container {
+        max-width: 461px;
+        margin: 120px 40px 0 40px;
+    }
+    #form-container form input {
+        width: 100%;
+    }
+}
+
+
+
+.input-box img {
+    z-index: 4;
+    margin-left: 24px;
+}
+
+
+
+.input-box {
+    background-color: #F7F8F9;
+    border-radius: 6px;
+    width: 100%;
+
+}
+
+.input-box input {
+    outline: none;
+}
+
+.input-box:focus {
+    border: 10px solid red;
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--white-f7) inset !important;
+}
+
+#mail-green{
+    display: none;
+
+}

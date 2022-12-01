@@ -1,0 +1,108 @@
+/*------------------  CONTACT -----------------*/
+
+#contactSection {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 52px;
+    margin-top: 80px;
+}
+
+#contactus-ill {
+    max-width: 637px;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1020px) {
+    #contactSection {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+    }
+}
+
+#contactTitle {
+    display: grid;
+    gap: 16px;
+}
+
+#contactSection form {
+    display: grid;
+    gap: 24px;
+    margin-top: 52px;
+}
+
+#contactSection form input {
+    padding: 16px 24px 16px 24px;
+    background-color: var(--bg-white);
+    border-radius: 6px;
+    font-style:  var(--main-style);
+    font-weight:  var(--main-weight);
+    font-size:  var(--font-18);
+    line-height:  var(--line-26);
+    background-repeat: no-repeat;
+    background-position: 24px;
+}
+
+
+#contactSection form input::placeholder {
+    font-style: var(--main-style);
+    font-weight: var(--main-weight);
+    font-size:  var(--font-18);
+    line-height:  var(--line-22);
+    color:var(--black-66) ;
+}
+
+#contactSection textarea {
+    padding: 16px 24px;
+    background: var(--bg-white);
+    border-radius: 6px;
+    font-style: var(--main-style);
+    font-weight: var(--main-weight);
+    font-size:  var(--font-18);
+    line-height:  var(--line-26);
+    height: 149px;
+    resize: vertical;
+}
+
+#contactSection textarea::placeholder {
+    font-style: var(--main-style);
+    font-weight: var(--main-weight);
+    font-size:  var(--font-18);
+    line-height:  var(--line-22);
+    color: var(--black-66);
+}
+
+
+#submitMsg {
+    max-width: 162px;
+    margin-top: 8px;
+    justify-self: end;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--bg-white) inset !important;
+}
+
+.input-box-3{
+    display: flex;
+    background-color: var(--bg-white);
+    padding:  0 24px;
+}
+
+
+@media only screen and (max-width:400px){
+ 
+
+    #contactSection form input {
+        padding: 16px 0px 16px 0px;
+        background-color: var(--bg-white);
+        max-width: 100%;
+     
+    }
+   
+
+}

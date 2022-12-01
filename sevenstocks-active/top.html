@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="styles/style.css">
+   
+    <link rel="stylesheet" href="styles/splide.min.css">
+
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <title>Top Posts</title>
+</head>
+
+<body>
+
+    <div class="head-container">
+
+        <div class="head">
+
+            <div class="header-mobile">
+                <div class="header-onOff">
+                    <img src="icons/logo-white.svg" class="sevenLogo"> 
+                    <img src="icons/menu.svg" id="menu-btn" onclick="openMenu()">
+                    <img src="icons/menu-x.svg" id="menu-x" onclick="openMenu()" class="hidden">
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden ">
+
+                <nav class="mobile-nav">
+                    <a href="index.html" class="navigation-link">
+                        <li> 컨설팅 중인 기업</li>
+                    </a>
+                    <a href="psge-2.html">
+                        <li> 뉴스룸</li>
+                    </a>
+                    <a href="page-1.html">
+                        <li> 회사소개
+                    </a>
+
+                    <a href="top.html">
+                        <li> 서비스</li>
+                    </a>
+                    <a href="page-5.html">
+                        <li> 블로그</li>
+                    </a>
+                    <a href="contact.html">
+                        <li> 상담문의</li>
+                    </a>
+
+                    <button class="mobile-nav-btn">
+                        <img src="icons/cass.svg" alt="" id="red-call-mob">
+                        <img src="icons/call-white.svg" alt="" id="white-call-mob">
+                        02-529-1001
+                    </button>
+                </nav>
+            </div>
+
+            <div class="header_menuu">
+                <a href="index.html"><img src="imgs/logo.svg" alt="Sevenstocks" id="logo"></a>
+                <ul id="header_nav">
+                    <li><a href="page-5.html" >컨설팅 중인 기업</a></li>
+                    <li><a href="page-4.html" class="">뉴스룸</a></li>
+                    <li><a href="page-1.html">회사소개</a></li>
+                    <li><a href="page-2.html">서비스</a></li>
+                    <li><a href="top.html">블로그</a></li>
+                    <li><a href="contact.html">상담문의</a></li>
+                </ul>
+                <div id="header_button_container">
+                  <a href="portfolio.html"><button id="header_menu_button">
+                        <img src="icons/call.svg" alt="Phone" id="call-red">
+                        <img src="icons/call-white.svg" alt="Phone" id="call-white">
+                        02-529-1001
+                    </button>
+                  </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="section-m">
+
+        <div class="grey-bg">
+
+            <div class="content-container">
+
+                <div class="content-hat">
+                    <p class="black-30">Top posts</p>
+                    <div>
+                        <img src="icons/back.svg" alt="">
+                      <a href="portfolio.html"> <img src="icons/next.svg" alt=""></a> 
+                    </div>
+
+                </div>
+
+
+                <!--this is main container-->
+
+
+                <div>
+                    <div class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list" >
+                                <li class="splide__slide">
+
+                                    <div class="posts-container">
+
+                                        <div>
+                                            <div class="category-box">
+                                                <span class="category">
+                                                    <p class="red-16">유라이크코리아</p>
+                                                </span>
+                                                <p class="grey-18">06/16/2021</p>
+                                            </div>
+
+                                            <div class="post-txt">
+                                                <p class="black-24">세계최초 글로벌 특허기반으로 만들어진 ‘코드맵’</p>
+                                                <p class="black-14">Last year, then-President Donald Trump sought to
+                                                    ban TikTok in
+                                                    the U.S. or
+                                                    force a merger with a U.S. company. The Trump administration,
+                                                    including
+                                                    Secretary of State
+                                                    Mike Pompeo...</p>
+                                            </div>
+                                            <button id="topBtn">Read More</button>
+
+
+
+                                        </div>
+                                        <img src="imgs/dome.png" alt="">
+                                    </div>
+
+                                </li>
+                                <li class="splide__slide">
+
+                                    <div class="posts-container ">
+
+                                        <div>
+                                            <div class="category-box">
+                                                <span class="category">
+                                                    <p class="red-16">유라이크코리아</p>
+                                                </span>
+                                                <p class="grey-18">06/16/2021</p>
+                                            </div>
+
+                                            <div class="post-txt">
+                                                <p class="black-24">세계최초 글로벌 특허기반으로 만들어진 ‘코드맵’</p>
+                                                <p class="black-14">Last year, then-President Donald Trump sought to
+                                                    ban TikTok in
+                                                    the U.S. or
+                                                    force a merger with a U.S. company. The Trump administration,
+                                                    including
+                                                    Secretary of State
+                                                    Mike Pompeo...</p>
+                                            </div>
+                                            <button id="topBtn">Read More</button>
+
+
+
+                                        </div>
+                                        <img src="imgs/dome-2.jpg" alt="Dome" id="dome-2">
+                                    </div>
+
+
+                                </li>
+                                <li class="splide__slide">
+
+                                    <div class="posts-container ">
+
+                                        <div>
+                                            <div class="category-box">
+                                                <span class="category">
+                                                    <p class="red-16">유라이크코리아</p>
+                                                </span>
+                                                <p class="grey-18">06/16/2021</p>
+                                            </div>
+
+                                            <div class="post-txt">
+                                                <p class="black-24">세계최초 글로벌 특허기반으로 만들어진 ‘코드맵’</p>
+                                                <p class="black-14">Last year, then-President Donald Trump sought to
+                                                    ban TikTok in
+                                                    the U.S. or
+                                                    force a merger with a U.S. company. The Trump administration,
+                                                    including
+                                                    Secretary of State
+                                                    Mike Pompeo...</p>
+                                            </div>
+                                            <button id="topBtn">Read More</button>
+
+
+                                        </div>
+                                        <img src="imgs/dome.png" alt="Dome" id="dome-2">
+                                    </div>
+
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="posts-container">
+
+                                        <div>
+                                            <div class="category-box">
+                                                <span class="category">
+                                                    <p class="red-16">유라이크코리아</p>
+                                                </span>
+                                                <p class="grey-18">06/16/2021</p>
+                                            </div>
+
+                                            <div class="post-txt">
+                                                <p class="black-24">세계최초 글로벌 특허기반으로 만들어진 ‘코드맵’</p>
+                                                <p class="black-14">Last year, then-President Donald Trump sought to
+                                                    ban TikTok in
+                                                    the U.S. or
+                                                    force a merger with a U.S. company. The Trump administration,
+                                                    including
+                                                    Secretary of State
+                                                    Mike Pompeo...</p>
+                                            </div>
+                                            <button id="topBtn">Read More</button>
+
+
+
+                                        </div>
+                                        <img src="imgs/dome.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content-container">
+
+            <div class="posters-container">
+                <div>
+                    <p class="black-28">Recent posts</p>
+
+                    <div class="posts">
+
+                        <div class="post">
+                            <img src="imgs/post-1.png" class="post-img" alt="">
+                            <div>
+                                <div class="category-box">
+                                    <span class="category">
+                                        <p class="red-16">Business</p>
+                                    </span>
+                                    <p class="grey-16">06/16/2021</p>
+
+                                </div>
+                                <div class="post-txt">
+                                    <p class="black-24">Hong Kong pro-democracy newspaper Apple Daily to shut down </p>
+                                    <p class="grey-14"> The pressure on Apple Daily leading up to its closure has raised
+                                        concerns over press freedom in Hong Kong — a semi-autonomous region under
+                                        Chinese
+                                        rule. </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="post">
+                            <img src="imgs/post-2.png" class="post-img" alt="">
+                            <div>
+                                <div class="category-box">
+                                    <span class="category">
+                                        <p class="red-16">Business</p>
+                                    </span>
+                                    <p class="grey-16">06/16/2021</p>
+
+                                </div>
+
+                                <div class="post-txt">
+                                    <p class="black-24">Hong Kong pro-democracy newspaper Apple Daily to shut down </p>
+                                    <p class="grey-14"> The pressure on Apple Daily leading up to its closure has raised
+                                        concerns over press freedom in Hong Kong — a semi-autonomous region under
+                                        Chinese
+                                        rule. </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="post" data-aos="fade-right">
+                            <img src="imgs/post-3.png" class="post-img" alt="">
+                            <div>
+                                <div class="category-box">
+                                    <span class="category">
+                                        <p class="red-16">Business</p>
+                                    </span>
+                                    <p class="grey-16">06/16/2021</p>
+
+                                </div>
+
+                                <div class="post-txt">
+                                    <p class="black-24">Hong Kong pro-democracy newspaper Apple Daily to shut down </p>
+                                    <p class="grey-14"> The pressure on Apple Daily leading up to its closure has raised
+                                        concerns over press freedom in Hong Kong — a semi-autonomous region under
+                                        Chinese
+                                        rule. </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="post" data-aos="fade-right">
+                            <img src="imgs/post-4.png" alt="">
+                            <div>
+                                <div class="category-box">
+                                    <span class="category">
+                                        <p class="red-16">Business</p>
+                                    </span>
+                                    <p class="grey-16">06/16/2021</p>
+
+                                </div>
+                                <div class="post-txt">
+                                    <p class="black-24">Hong Kong pro-democracy newspaper Apple Daily to shut down </p>
+                                    <p class="grey-14"> The pressure on Apple Daily leading up to its closure has raised
+                                        concerns over press freedom in Hong Kong — a semi-autonomous region under
+                                        Chinese
+                                        rule. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="load-btn-container"><button id="load-posts-btn">Load More</button></div>
+                </div>
+                <div class="right-posters">
+
+                    <div class="poster" id="pstr-1">
+
+
+
+                        <button class="poster-btn">전화 요청</button>
+                    </div>
+
+                    <div class="poster pstr-2" id="pstr-2">
+                        <p class="white-16">A gathering place for experts looking for undervalued stocks</p>
+
+                        <p class="white-24">ULIKEKOREA</p>
+
+                        <div class="poster-btn-2"> <button class="read-btn">Read more</button></div>
+                    </div>
+
+                    <div class="poster pstr-3 " id="pstr-3">
+                        <p class="white-16">A gathering place for experts looking for undervalued stocks</p>
+
+                        <p class="white-24">Alpado</p>
+
+                        <div class="poster-btn-2"> <button class="read-btn">Read more</button></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div >
+
+
+           
+            <footer class="">
+                <div class="footer ">
+
+                    <div class="footer-content">
+                        <div class="footer-left">
+                            <img src="icons/logo-white.svg" >
+                            <p class="white-20">상장예정기업 전문 컨설팅 기업 <br>
+                                (주)세븐스톡 홀딩스</p>
+
+                            <p class="white-16-100">대표자 : 송영봉 | 사업자 등록번호 : 109-86-46874
+                                통신판매업신고번호 : 제2016 서울 강남 0411호</p>
+                            <span class="footer-call">
+                                <img src="icons/call-green.svg" >
+                                <p class="white-40"> 02-529-1001</p>
+                            </span>
+                        </div>
+
+                        <div class="footer-right">
+                            <div class="footer-2-txt">
+                                <p class="white-32">상담이 필요하신가요?</p>
+                                <p class="grey-18-06">성함과 핸드폰 번호를 남겨주시면 <br>
+                                    빠른 시일 내에 연락 드리도록 하겠습니다.</p>
+                            </div>
+
+                            <div class="footer-right-content">
+                                <div class="footer-input">
+                                    <input type="text" placeholder="성함">
+                                    <input type="text" placeholder="핸드폰 번호">
+                                </div>
+
+                                <div class="radio-container">
+
+                                    <label class="container-2 ">
+
+
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+
+                                        <p class="white-18-100"> 투자자</p>
+                                    </label>
+                                    <label class="container-2 ">
+
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+
+                                        <p class="white-18-100"> 기업</p>
+                                    </label>
+
+                                    </span>
+                                </div>
+
+                                <div class="footer-btn"> <button>문의하기</button> </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <ul>
+                            <a href="#" class="white-16-100">이용약관</a>
+                            <a href="#" class="white-16-100">개인정보 취급방식</a>
+                            <a href="#" class="white-16-100">회사소개서</a>
+                        </ul>
+                        <p class="white-16-100">Copyright © 2021 Sevenstock Holdings Inc. All rights are reserved.</p>
+                    </div>
+
+                </div>
+
+            </footer>
+        </div>
+
+       
+    </div>
+
+    <button onclick="topFunction()" id="toTopBtn" title="Go to top" ><img src="icons/fast-forward.svg" alt="Arrow up" ></button>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <script>
+        new Splide('.splide').mount();
+    </script>
+
+
+
+
+    <script>
+        AOS.init();
+    </script>
+
+<script>
+    function openMenu() {
+        var menu = document.getElementById("mobile-menu");
+        const x = document.querySelectorAll('div');
+
+
+        if (menu.classList.contains("hidden")) {
+       
+             menu.classList.remove("hidden");
+             document.getElementById('fullPage').style.maxHeight ="100vh";
+             document.getElementById('fullPage').style.overflow ="hidden";
+            document.getElementById("menu-btn").classList.add("hidden");
+            document.getElementById("menu-x").classList.remove("hidden");
+        } else {
+         
+            menu.classList.add("hidden");
+            document.getElementById('fullPage').style.maxHeight ="none";
+            document.getElementById('fullPage').style.overflow ="visible";
+            document.getElementById("menu-btn").classList.remove("hidden");
+            document.getElementById("menu-x").classList.add("hidden");
+        }
+    }
+</script>
+
+<script>
+
+        //Get the button
+        var mybutton = document.getElementById("toTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+ 
+</script>
+
+<script>
+    
+
+</script>
+
+
+
+
+
+    <script src="changePost.js"></script>
+</body>
+
+</html>

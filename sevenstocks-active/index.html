@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fullpage.min.css">
+    <link rel="stylesheet" href="styles/splide-column.min.css">
+
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <title>Sevenstocks</title>
+
+</head>
+
+<body>
+   <button onclick="topFunction2()" id="toTopBtnMain"  ><img src="icons/fast-forward.svg" alt="Go to top" ></button>
+
+    
+    <div id="fullPage" >
+
+        <div class="section s1 "  >
+
+            <div class="headerspace ">
+
+                <div id="greyName">
+                    <p class="white-24">송영봉 의장</p>
+                    <p class="white-18">세븐스톡 홀딩스</p>
+
+                </div>
+
+                <img src="imgs/bg.png" alt="BG" id="bg">
+                <div id="red_bg">
+                  
+                </div>
+                <div id="icons_bg"></div>
+                <img src="imgs/left_line.svg" alt="left_line" id="left_line">
+
+         
+             
+                <div class="header-mobile">
+                    <div class="header-onOff">
+                        <img src="icons/logo-white.svg">
+                        <img src="icons/menu.svg" id="menu-btn" onclick="openMenu()">
+                        <img src="icons/menu-x.svg" id="menu-x" onclick="openMenu()" class="hidden">
+                    </div>
+                </div>
+
+                <div id="mobile-menu" class="hidden ">
+
+                    <nav class="mobile-nav">
+                        <a href="index.html" class="navigation-link">
+                            <li> 컨설팅 중인 기업</li>
+                        </a>
+                        <a href="page-2.html">
+                            <li> 뉴스룸</li>
+                        </a>
+                        <a href="page-1.html">
+                            <li> 회사소개
+                        </a>
+
+                        <a href="top.html">
+                            <li> 서비스</li>
+                        </a>
+                        <a href="page-5.html">
+                            <li> 블로그</li>
+                        </a>
+                        <a href="contact.html">
+                            <li> 상담문의</li>
+                        </a>
+
+                        <button class="mobile-nav-btn">
+                            <img src="icons/cass.svg" alt="" id="red-call-mob">
+                            <img src="icons/call-white.svg" alt="" id="white-call-mob">
+                            02-529-1001
+                        </button>
+                    </nav>
+                </div>
+
+     
+
+                <div class="container">
+                    <div class="header_menu" id="headerMenu">
+                        <a href="index.html"><img src="imgs/logo.svg" alt="Sevenstocks" id="logo"></a>
+                        <ul id="header_nav">
+                            <li><a href="page-5.html" >컨설팅 중인 기업</a></li>
+                            <li><a href="page-4.html">뉴스룸</a></li>
+                            <li><a href="page-1.html">회사소개</a></li>
+                            <li><a href="page-2.html" >서비스</a></li>
+                            <li><a href="top.html">블로그</a></li>
+                            <li><a href="contact.html">상담문의</a></li>
+                        </ul>
+                        <div id="header_button_container">
+                            <button id="header_menu_button">
+                                <img src="icons/call.svg" alt="Phone" id="call-red">
+                                <img src="icons/call-white.svg" alt="Phone" id="call-white">
+                                02-529-1001
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- <header> -->
+                      
+                    <div class="header_main_content">
+                        <div class="main_content_left">
+                            <h5 id="h5_header">세븐스톡 홀딩스</h5>
+                            <h1>기업의 가치를 더하다.</h1>
+                            <p id="h1_second">상장예정기업 전문 컨설팅 No.1</p>
+                            <p class="text">다이아몬드처럼 미래가치가 높은 스타트업을 발굴하여<br>집중 컨설팅을 통해 기업 가치를 높이는 일을 하는 IPO 전문 컨설팅 기업입니다.
+                            </p>
+                           <a href="contact.html"><button id="btn_header">전화상담 예약하기</button></a> 
+
+                            <div class="icons_container">
+                                <div class="icons_item">
+                                    <div class="icon_side">
+                                        <img src="imgs/call_made.svg" alt="Call-made">
+                                    </div>
+                                    <div class="icon_content_side">
+                                        <p class="icons_header">500%</p>
+                                        <p class="icons_text">기업평균성장률</p>
+                                    </div>
+                                </div>
+
+                                <div class="icons_item">
+                                    <div class="icon_side">
+                                        <img src="imgs/work.svg" alt="Work">
+                                    </div>
+                                    <div class="icon_content_side">
+                                        <p class="icons_header">2/1000</p>
+                                        <p class="icons_text">컨설팅 의뢰 수 (현재/총)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ceo_image_container">
+                            <img src="imgs/ceo.png" alt="CEO" id="ceo_image">
+                        </div>
+                    </div>
+                    <!--  </header> -->
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--  SECTION - 1 -->
+        <div class="section s2 " id="first-section" >
+
+
+
+            <div class="section-s ">
+
+                <div class="section-1">
+
+                    <div> <img src="imgs/img-1.png" alt=""></div>
+
+                    <div class="section-1-text">
+
+                        <p class="black-60 ">
+                            세븐스톡 홀딩스는 <br>
+                            <span class="red"> 다를 수 밖에</span> <br>
+                            없습니다.
+                        </p>
+                        <p class="grey-20">딜러를 통제하고 컨트롤 함으로써 기업의 가치를 <br>
+                            가장 정상적이고 긍정적인 방향으로 컨설팅 합니다.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section s3 ">
+            <!--  SECTION - 2 -->
+            <div class="section-s"  id="second-section">
+                <div class="section-2">
+
+                    <div class="section-2-text">
+                        <p class="black-60">검증된 소수의 기업만을
+                            <span class="red">집중 컨설팅 </span> 합니다.
+                        </p>
+
+                        <p class="grey-20">
+                            세븐스톡만의 엄격한 선정 기준과 철저한 현장 검증 및 사실 확인을 통해
+                            0.3%의 보석을 발굴합니다.
+                        </p>
+
+                        <ul class="check-list">
+
+                            <li>
+                                <img src="icons/red-check.svg" alt="">
+                                <p class="black-22-500">CEO 마인드</p>
+
+                            </li>
+                            <li>
+                                <img src="icons/green-check.svg" alt="">
+                                <p class="grey-22-500">저평가 가치주</p>
+
+                            </li>
+                            <li>
+                                <img src="icons/green-check.svg" alt="">
+                                <p class="grey-22-500">기술성</p>
+                            </li>
+                            <li>
+                                <img src="icons/green-check.svg" alt="">
+                                <p class="grey-22-500">상장성</p>
+                            </li>
+
+                            <li>
+                                <img src="icons/green-check.svg" alt="">
+                                <p class="grey-22-500">사업성</p>
+                            </li>
+                            <li>
+                                <img src="icons/green-check.svg" alt="">
+                                <p class="grey-22-500">시장성</p>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="section-2-img">
+                        <img src="imgs/pyramid.png" alt="">
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="section s4 ">
+            <!--  SECTION - 3 -->
+
+            <div class="section-s">
+
+                <div class="section-3">
+
+                    <div class="section-3-img">
+                        <img src="imgs/graph1.png" alt="">
+                    </div>
+                    <div class="section-3-text">
+                        <p class="black-60">컨설팅 받은 <br>
+                            기업가치의 변화</p>
+
+                        <p class="grey-20">세븐스톡은 기업의 도약을 위한 발판이 되어줍니다. <br>
+                            상상만 하던 이상을 현실로 만들어내는 곳 세븐스톡 홀딩스. <br>
+                            오로지 기업의 성장과 기업가치 상승을 위한 선택만을 고집합니다.</p>
+
+                        <div class="grow-container">
+                            <div class="grow-box">
+
+
+                                <div class="grow-amount">
+                                    <div class="grow-before-hat">
+                                        <p class="white-18">컨설팅 전</p>
+                                    </div>
+
+                                    <div class="amount">
+                                        <p class="black-33"> 1억 </p>
+                                        <p class="grey-14">기업가치</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div> <img src="icons/arrow-right.svg" alt="" class="red-arrow"> </div>
+                            <div class="grow-box">
+
+
+                                <div class="grow-amount">
+                                    <div class="grow-after-hat">
+                                        <p class="white-18">컨설팅 후</p>
+                                    </div>
+
+                                    <div class="amount">
+                                        <p class="black-33">50억</p>
+                                        <p class="grey-14">기업가치</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section s5 ">
+            <!--  SECTION - 4 -->
+
+            <div class="section-s">
+
+
+                <div class="section-4">
+
+                    <div class="section-4-content">
+
+                        <div class="section-4-text">
+                            <p class="black-60">방문자 후기</p>
+                            <p class="grey-20">방문자 후기는 방문상담을 하신 고객님들이 직접 남겨주신 <br> 실제 후기 내용입니다.</p>
+                            <div class="stories-btn-container"> <a href="contact.html"> <button id="stories-btn">방문상담 예약하기</button></a>
+                            </div>
+                        </div>
+
+                        <div class="test-style">
+                            <div class="splide"  >
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="section-4-stories">
+
+                                                <div class="storie">
+                                                    <img src="icons/queto.svg" alt="">
+                                                    <p class="grey-18-300">세븐스톡은 에코 시스템에 의한 밥말리에 고객 상담 금융투자는 카카오톡 홈페이지를 통해 확인할 수 있는데요!</p>
+                                                    <div>
+                                                        <p class="black-20">
+                                                            김XX [부산]
+                                                        </p>
+                    
+                                                        <p class="grey-16">
+                                                            코드에셋 투자자
+                                                        </p>
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="storie">
+                                                    <img src="icons/queto.svg" alt="">
+                                                    <p class="grey-18-300">세븐스톡은 에코 시스템에 의한 밥말리에 고객 상담 금융투자는 카카오톡 홈페이지를 통해 확인할 수 있는데요!</p>
+                                                    <div>
+                                                        <p class="black-20">
+                                                            김XX [부산]
+                                                        </p>
+                    
+                                                        <p class="grey-16">
+                                                            코드에셋 투자자
+                                                        </p>
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="storie">
+                                                    <img src="icons/queto.svg" alt="">
+                                                    <p class="grey-18-300">세븐스톡은 에코 시스템에 의한 밥말리에 고객 상담 금융투자는 카카오톡 홈페이지를 통해 확인할 수 있는데요!</p>
+                                                    <div>
+                                                        <p class="black-20">
+                                                            김XX [부산]
+                                                        </p>
+                    
+                                                        <p class="grey-16">
+                                                            코드에셋 투자자
+                                                        </p>
+                                                    </div>
+                                                </div>
+                    
+                    
+                    
+                    
+                                            </div>
+                    
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="section-4-stories">
+
+                                                <div class="storie">
+                                                    <img src="icons/queto.svg" alt="">
+                                                    <p class="grey-18">세븐스톡은 에코 시스템에 의한 밥말리에 고객 상담 금융투자는 카카오톡 홈페이지를 통해 확인할 수 있는데요!</p>
+                                                    <div>
+                                                        <p class="black-20">
+                                                            김XX [부산]
+                                                        </p>
+                    
+                                                        <p class="grey-16">
+                                                            코드에셋 투자자
+                                                        </p>
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="storie">
+                                                    <img src="icons/queto.svg" alt="">
+                                                    <p class="grey-18">세븐스톡은 에코 시스템에 의한 밥말리에 고객 상담 금융투자는 카카오톡 홈페이지를 통해 확인할 수 있는데요!</p>
+                                                    <div>
+                                                        <p class="black-20">
+                                                            김XX [부산]
+                                                        </p>
+                    
+                                                        <p class="grey-16">
+                                                            코드에셋 투자자
+                                                        </p>
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="storie">
+                                                    <img src="icons/queto.svg" alt="">
+                                                    <p class="grey-18">세븐스톡은 에코 시스템에 의한 밥말리에 고객 상담 금융투자는 카카오톡 홈페이지를 통해 확인할 수 있는데요!</p>
+                                                    <div>
+                                                        <p class="black-20">
+                                                            김XX [부산]
+                                                        </p>
+                    
+                                                        <p class="grey-16">
+                                                            코드에셋 투자자
+                                                        </p>
+                                                    </div>
+                                                </div>
+                    
+                    
+                    
+                    
+                                            </div>
+                    
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="section-4-stories">
+
+                                                <div class="storie">
+                                                    <img src="icons/queto.svg" alt="">
+                                                    <p class="grey-18">세븐스톡은 에코 시스템에 의한 밥말리에 고객 상담 금융투자는 카카오톡 홈페이지를 통해 확인할 수 있는데요!</p>
+                                                    <div>
+                                                        <p class="black-20">
+                                                            김XX [부산]
+                                                        </p>
+                    
+                                                        <p class="grey-16">
+                                                            코드에셋 투자자
+                                                        </p>
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="storie">
+                                                    <img src="icons/queto.svg" alt="">
+                                                    <p class="grey-18">세븐스톡은 에코 시스템에 의한 밥말리에 고객 상담 금융투자는 카카오톡 홈페이지를 통해 확인할 수 있는데요!</p>
+                                                    <div>
+                                                        <p class="black-20">
+                                                            김XX [부산]
+                                                        </p>
+                    
+                                                        <p class="grey-16">
+                                                            코드에셋 투자자
+                                                        </p>
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="storie">
+                                                    <img src="icons/queto.svg" alt="">
+                                                    <p class="grey-18">세븐스톡은 에코 시스템에 의한 밥말리에 고객 상담 금융투자는 카카오톡 홈페이지를 통해 확인할 수 있는데요!</p>
+                                                    <div>
+                                                        <p class="black-20">
+                                                            김XX [부산]
+                                                        </p>
+                    
+                                                        <p class="grey-16">
+                                                            코드에셋 투자자
+                                                        </p>
+                                                    </div>
+                                                </div>
+                    
+                    
+                    
+                    
+                                            </div>
+                    
+                                        </li>
+                                        <li class="splide__slide">slide 04</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="section-bg">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section s6">
+            <!--  SECTION - 5 -->
+            <div class="section-s">
+
+                <div class="section-5">
+
+                    <div class="map">
+
+                        <div class="map-hat">
+                            <span id="map-span">
+                                <img src="icons/loud.svg" alt="">
+                                <p class="">
+                                    1층에 ‘파리바게트(빵집)’가 있는 건물, 6층입니다.
+                                </p>
+                            </span>
+
+                            <div class="map-btns">
+                                <button>건물 주변 사진</button>
+                                <button>지하철 길 안내</button>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="map-container">
+
+                            <div id="map">
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="section-5-text">
+                        <div class="map-header">
+                            <p class="black-40">오시는 길</p>
+                        </div>
+
+                        <ul class="map-list" id="map-left-side">
+                            <li>
+
+                                <div>
+                                    <p class="grey-19-l">주소</p>
+                                    <img src="icons/map-icons.svg" alt="copy" class="copyIcon" >
+
+                                </div>
+                                <div class="popup">
+                                    <span class="popuptext">Text copied</span>
+                                </div> 
+                                
+                                <p class="black-18-400">서울특별시 강남구 테헤란로 88길 17
+                                   <br> (대치동, 세안빌딩) 6층</p>
+                            </li>
+
+                            <li>
+
+                                <div>
+                                    <p class="grey-19-l">연락처</p>
+                                    <img src="icons/map-icons.svg" alt="copy" class="copyIcon" >
+
+                                </div>
+
+                                <div class="popup">
+                                    <span class="popuptext">Text copied</span>
+                                </div>
+                               
+                                <p class="black-18-400">02-529-1001</p>
+                            </li>
+
+                            <li>
+
+                                <div>
+                                    <p class="grey-19-l">팩스번호</p>
+                                    <img src="icons/map-icons.svg" alt="copy" class="copyIcon" >
+
+                                </div>
+
+                                <div class="popup">
+                                    <span class="popuptext">Text copied</span>
+                                </div> 
+
+                
+                                <p class="black-18-400">02-529-3322</p>
+                            </li>
+
+                            <li>
+
+                                <div>
+                                    <p class="grey-19-l">이메일</p>
+                                    <img src="icons/map-icons.svg" alt="copy" class="copyIcon" >
+                                </div>
+
+                                <div class="popup">
+                                    <span class="popuptext">Text copied</span>
+                                </div> 
+                                <p class="black-18-400">help@7-stock.com</p>
+                            </li>
+                        </ul>
+
+                        <button class="map-btn">네이버/카카오 지도로 검색하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section s7" id="footer-container">
+
+
+            <div class="footerBox">
+            <footer class="">
+                <div class="footer ">
+
+                    <div class="footer-content">
+                        <div class="footer-left">
+                            <img src="icons/logo-white.svg" >
+                            <p class="white-20">상장예정기업 전문 컨설팅 기업 <br>
+                                (주)세븐스톡 홀딩스</p>
+
+                            <p class="white-16-100">대표자 : 송영봉 | 사업자 등록번호 : 109-86-46874
+                                통신판매업신고번호 : 제2016 서울 강남 0411호</p>
+                            <span class="footer-call">
+                                <img src="icons/call-green.svg" >
+                                <p class="white-40"> 02-529-1001</p>
+                            </span>
+                        </div>
+
+                        <div class="footer-right">
+                            <div class="footer-2-txt">
+                                <p class="white-32">상담이 필요하신가요?</p>
+                                <p class="grey-18-06">성함과 핸드폰 번호를 남겨주시면 <br>
+                                    빠른 시일 내에 연락 드리도록 하겠습니다.</p>
+                            </div>
+
+                            <div class="footer-right-content">
+                                <div class="footer-input">
+                                    <input type="text" placeholder="성함">
+                                    <input type="text" placeholder="핸드폰 번호">
+                                </div>
+
+                                <div class="radio-container">
+
+                                    <label class="container-2 ">
+
+
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+
+                                        <p class="white-18-100"> 투자자</p>
+                                    </label>
+                                    <label class="container-2 ">
+
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+
+                                        <p class="white-18-100"> 기업</p>
+                                    </label>
+
+                                    </span>
+                                </div>
+
+                                <div class="footer-btn"> <button>문의하기</button> </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <ul>
+                            <a href="#" class="white-16-100">이용약관</a>
+                            <a href="#" class="white-16-100">개인정보 취급방식</a>
+                            <a href="#" class="white-16-100">회사소개서</a>
+                        </ul>
+                        <p class="white-16-100">Copyright © 2021 Sevenstock Holdings Inc. All rights are reserved.</p>
+                    </div>
+
+                </div>
+
+            </footer>
+        </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+<script>
+    new Splide( '.splide', {
+    direction  : 'ttb',
+     heightRatio: 1.8,
+    perPage    : 1,
+    } ).mount();
+
+</script>
+
+    <script>
+        function initMap() {
+            var location = { lat: -25.9, lng: 131.5 };
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: location
+            });
+        }
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6vumdYC5D58uTaZ3kEgVLFFOOg_1xCNo&callback=initMap">
+        </script>
+
+
+    <script src="fullpage.min.js">
+
+    </script>
+
+    <script>
+
+
+        
+
+        var word;
+
+function myFunction(x) {
+
+  if (!x.matches) { // If media query matches
+    word = "#fullPage";
+  } else {
+    word = "none";
+  }
+
+  
+}
+
+
+    
+      
+var x = window.matchMedia("(max-width: 1280px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+
+
+
+
+        new fullpage(word, {
+
+         autoScrolling: true,
+         navigation: true,
+         responsiveWidth:1280
+
+        })
+
+  
+
+
+
+    </script>
+
+ <script> 
+
+        var mybutton = document.getElementById("toTopBtnMain");
+
+
+        // When the user clicks on the button, scroll to the top of the document
+        var lis = document.getElementsByClassName('fp-sr-only');
+
+        setInterval(function(){  if(lis[0].parentElement.classList.contains('active')){        
+            //   myButton.style.display = "none";
+            mybutton.style.display = "none";
+        }else {
+           
+            mybutton.style.display = "block";
+            document.getElementById('headerMenu').style.marginTop = '40px';
+            document.getElementById('icons_bg').style.top = '810px';
+
+        } }, 700);
+
+       
+
+        function topFunction2() {
+
+
+           for(var v = 0; v <7; v++){
+                   lis[v].parentElement.classList.remove('active');
+             }
+
+             lis[0].parentElement.classList.add('active');
+             document.getElementById('fullPage').style.transform = 'translate3d(0,0,0)';
+        }
+       
+        
+      
+        
+        </script>
+
+    <script>
+        function openMenu() {
+            var menu = document.getElementById("mobile-menu");
+            const x = document.querySelectorAll('div');
+
+
+            if (menu.classList.contains("hidden")) {
+           
+                 menu.classList.remove("hidden");
+                 document.getElementById('fullPage').style.maxHeight ="100vh";
+                 document.getElementById('fullPage').style.overflow ="hidden";
+
+                document.getElementById("menu-btn").classList.add("hidden");
+                document.getElementById("menu-x").classList.remove("hidden");
+            } else {
+             
+                menu.classList.add("hidden");
+                document.getElementById('fullPage').style.maxHeight ="none";
+                 document.getElementById('fullPage').style.overflow ="visible";
+
+                document.getElementById("menu-btn").classList.remove("hidden");
+                document.getElementById("menu-x").classList.add("hidden");
+            }
+        }
+    </script>
+
+
+<script> 
+
+    var y  = document.getElementById("map-left-side").querySelectorAll('img');
+ 
+        for(let i = 0; i <y.length; i++){
+       	y[i].addEventListener('click', copy);
+     }
+ 
+
+    function copy() {
+  
+      
+    /* Get the text field */
+     var copyText = this.parentElement.parentElement.getElementsByClassName("black-18-400");
+     var popup = this.parentElement.parentElement.getElementsByClassName("popup");
+     var g = popup[0].querySelectorAll('span');
+    /* Select the text field */
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText[0].innerText);
+     
+   g[0].classList.add("show");
+   setTimeout(function(){ g[0].classList.remove('show') }, 2000);
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PDF made easier">
+    <meta name="keywords" content="PDF, Tools, Convert">
+    <meta name="author" content="Altersoft">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/signup.css">
+
+    <title>Reset password</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html"><img src="imgs/logo.svg" alt="Pdfify"></a>
+
+    </header>
+
+    <div id="form-container" class="reset-password">
+
+        <h1 class="p-black-36-b">Reset passwrod</h1>
+
+        <form action="">
+            <span class="input-box">
+                
+                <img src="imgs/password.svg" alt="Key">
+                  <input type="password"  class="new-pass" placeholder="Enter new password">
+              <div id="eye-box"  onclick="showHidePass()">
+                <img src="imgs/eye-shut.svg" alt="Eyes shut" id="eye-shut" >
+                <img src="imgs/eye.svg" alt="Eye" id="eye" >
+            </div>
+        </span>
+             <span class="input-box">  
+                
+                <img src="imgs/password.svg" alt="Key">
+
+                <input type="password"  class="repeat-pass" placeholder="Repeat new password">
+
+                <div id="eye-box"  onclick="showHidePass2()">
+                    <img src="imgs/eye-shut.svg" alt="Eyes shut" id="eye-shut-2"  >
+    
+                    <img src="imgs/eye.svg" alt="Eye" id="eye-2" style="display: none;" >
+               </div>
+              
+         </span>
+
+        </form>
+        <button class="btn-primary">Reset password</button>
+
+
+    </div>
+
+    <script>
+        function showHidePass() {
+            var x = document.getElementsByClassName("new-pass");
+
+            var eyeShut= document.getElementById("eye-shut");
+            var eyeOpen= document.getElementById("eye");
+         
+   
+
+            if (x[0].type === "password") {
+                x[0].type = "text";
+                eyeShut.style.display="none";
+                eyeOpen.style.display="block";
+
+            } else {
+                x[0].type = "password";
+                eyeShut.style.display="block";
+                eyeOpen.style.display="none";
+            }
+
+        }
+
+        function showHidePass2() {
+           
+            var y = document.getElementsByClassName("repeat-pass");
+
+
+         
+            var eyeShut1= document.getElementById("eye-shut-2");
+            var eyeOpen1= document.getElementById("eye-2");
+
+            if (y[0].type === "password") {
+                y[0].type = "text";
+                eyeShut1.style.display="none";
+                eyeOpen1.style.display="block";
+
+            } else {
+                y[0].type = "password";
+                eyeShut1.style.display="block";
+                eyeOpen1.style.display="none";
+            }
+            
+        }
+    </script>
+
+</body>
+
+</html>

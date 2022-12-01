@@ -1,0 +1,125 @@
+/*-----------------  FAQ  ----------------------*/
+
+.marg-80 {
+    margin-top: 80px;
+}
+
+.double-title {
+    text-align: center;
+    display: grid;
+    gap: 24px
+}
+
+#faqs {
+    display: grid;
+    gap: 24px;
+    margin-top: 52px;
+}
+
+.question {
+    width: 100%;
+    height: 100px;
+    padding: 32px 40px 32px 32px;
+    border: 1px solid  var(--grey-d2);
+}
+
+.accordion {
+    width: 100%;
+    padding: 32px 40px 0px 32px;
+    border: 1px solid  var(--grey-d2);
+    cursor: pointer;
+    outline: none;
+    transition: 0.4s;
+}
+
+.dropdown {
+  
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.active img {
+    transform: rotate(180deg)
+}
+
+.active,
+.accordion:hover {
+    /* background-color: var(--white-lighter); */
+}
+
+.panel {
+    margin-top: 32px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+
+/*------------------------  Banner Start  -----------------------------*/
+
+#banner {
+    /* height: 320px; */
+    background:  var(--bg-white);
+    width: 100%;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 17px 40px 0 80px;
+    gap: 55px;
+    overflow: hidden;
+}
+
+#banner .left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+    margin-bottom: 52px;
+}
+
+#banner div button {
+    margin-top: 16px;
+}
+
+#banner .right-side {
+    align-self: end;
+}
+
+.p-black-24-n {
+    font-style: var(--main-style);
+    font-weight: var(--main-weight);
+    font-size:  var(--font-24);
+    line-height:  var(--line-29);
+    color: var(--blue-dark-dark);
+}
+
+@media only screen and (max-width: 1280px) {
+    #banner .right-side {
+        display: none;
+    }
+    #banner .left-side {
+        margin: 0;
+        padding: 0;
+    }
+    #banner {
+        padding: 32px;
+        gap: 0;
+    }
+    .p-black-24 {
+        font-size:  var(--font-26);
+        font-weight: var(--weight-5);
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .p-black-24-n {
+        font-size:  var(--font-20);
+        line-height:  var(--line-22);
+        color:  var(--blue-dark-dark);
+    }
+    .p-grey-18 {
+        font-size:  var(--font-16);
+        line-height:  var(--line-22);
+        color:  var(--grey-blue-light);
+    }
+}
